@@ -16,7 +16,7 @@ app.get('/', function(req, res) {
   res.redirect('index.html');
 });
 
-var port = Number(process.env.PORT || 5000);
+var port = Number(process.env.PORT || 8080);
 app.listen(port, function() {
   console.log("Listening on " + port);
 });
@@ -30,11 +30,11 @@ app.post('/comments', function(req, res) {
           pass: process.env.email_pw
       }
     });
-  
+
     var mailOptions = {
-        from: "Elizabeth website comments <" + req.body.Email + ">", 
+        from: "Elizabeth website comments <" + req.body.Email + ">",
     	to: [process.env.send_to, process.env.send_to_also],
-    	subject: req.body.Subject, 
+    	subject: req.body.Subject,
 		replyTo: req.body.Email,
     	text: "Email sent from: " + req.body.Email + '. ' + req.body.Message
 	};
