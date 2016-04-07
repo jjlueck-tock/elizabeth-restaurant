@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>elizabeth-restaurant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Direction-Aware Hover Effect with CSS3 and jQuery" />
+    <meta name="keywords" content="hover, css3, jquery, effect, direction, aware, depending, thumbnails" />
+    <meta name="author" content="Codrops" />
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Alegreya+SC:700,400italic' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="js/modernizr.custom.97074.js"></script>
+    <style type="text/css">
+      .face {
+        text-align: right;
+      }
+    </style>
+    <noscript><link rel="stylesheet" type="text/css" href="css/noJS.css"/></noscript>
+  </head>
+  <body>
+
+    <div class="container">
+      <!-- Codrops top bar --><!--/ Codrops top bar -->
+      <header class="clearfix">
+	<span></span></a>
+</nav>
+<p>Welcome.</p>
+<br/>
+<p>to book a table visit our <a href="https://elizabeth-restaurant.tocktix.com" target="_blank">booking site</a> or call us at 773-681-0651</p>
+</header>
+<section>
+  <ul id="da-thumbs" class="da-thumbs">
+    <li>
+      <a href="index.html"><img src="images/sm-deer.jpg" width="220" height="165" alt="deer">
+	<div><span>Home</span></div>
+      </a>
+    </li>
+    <li>
+      <a href="menu.html"><img src="images/sm-diamond.jpg" width="220" height="165" alt="diamond">
+	<div><span>menu</span></div>
+      </a>
+    </li>
+    <li>
+      <a href="food.html"><img src="images/sm-owl.jpg" width="220" height="165" alt="owl">
+	<div><span>food</span></div>
+      </a>
+    </li>
+    <li class="nohover">
+      <a href="https://elizabeth-restaurant.tocktix.com" target="_blank"><img src="images/sm-grey.jpg" width="220" height="165">
+	<div><span>book a table</span></div>
+      </a>
+    </li>
+    <li>
+      <a href="press.html"><img src="images/sm-e.jpg" width="220" height="165" alt="e">
+	<div><span>press</span></div>
+      </a>
+    </li>
+    <li>
+      <a href="contact.html"><img src="images/sm-l.jpg" width="220" height="165" alt="l">
+	<div><span>contact</span></div>
+      </a>
+    </li>
+    <li>
+      <a href="about.html"><img src="images/sm-i.jpg" width="220" height="165" alt="i">
+	<div><span>about</span></div>
+      </a>
+    </li>
+    <li>
+      <a href="index.html"><img src="images/sm-elizabeth.jpg" width="220" height="165" alt="elizabeth"></a>
+    </li>
+  </ul>
+</section>
+</div>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+<script type="text/javascript">
+  $(function() {
+
+  $('#da-thumbs > li').each(function() {
+    if (!$(this).hasClass('nohover')) {
+      $(this).hoverdir({
+        hoverDelay : 50,
+        inverse : true
+      });
+    }
+  });
+
+  });
+</script>
+
+<div class="footer">
+  &nbsp;&nbsp;|&nbsp;&nbsp; <a>773-681-0651</a>
+  &nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="https://www.google.com/maps/place/Elizabeth+Restaurant/@41.9695937,-87.6885885,17z/data=!3m1!4b1!4m2!3m1!1s0x880fd204bf7dc473:0xdbac3f4762d08eaf" target="_blank">4835 N. Western, Unit D, Chicago, IL 60625</a>
+  &nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="mailto:info@elizabeth-restaurant.com">info@elizabeth-restaurant.com</a>
+  &nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="tou.html">Terms of Use</a>
+  &nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="pp.html">Privacy Policy</a>
+  &nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="https://www.facebook.com/pages/Elizabeth-Restaurant/195984747150171?ref=hl"><img src="images/facebook.png" width="22" height="22"></a>
+  <a href="https://twitter.com/ElizabethRest"><img src="images/twitter.jpg" width="22" height="22"></a>
+  &nbsp;&nbsp;|
+</div>
+
+<div class='promo footer'>
+  Our other productions:
+  <a href="http://www.bunnythemicrobakery.com/" target="_blank">Bunny the Micro Bakery</a>,
+  <a href="http://www.wunder-pop.com/" target="_blank">WunderPOP</a>,
+  and
+  <a href="http://www.kitsunerestaurant.com/" target="_blank">Kitsune</a>
+</div>
+
+</body>
+</html>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50897105-5', 'elizabeth-restaurant.com');
+  ga('send', 'pageview');
+
+</script>

@@ -1,0 +1,270 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>menu</title>
+<style type="text/css">
+<!--
+@import url("menu.css");
+-->
+</style>
+<style type="text/css">
+<!--
+body {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: #666666;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+	background-color: #cac9c5;
+}
+
+/* Tips for Elastic layouts
+1. Since the elastic layouts overall sizing is based on the user's default fonts size, they are more unpredictable. Used correctly, they are also more accessible for those that need larger fonts size since the line length remains proportionate.
+2. Sizing of divs in this layout are based on the 100% font size in the body element. If you decrease the text size overall by using a font-size: 80% on the body element or the #container, remember that the entire layout will downsize proportionately. You may want to increase the widths of the various divs to compensate for this.
+3. If font sizing is changed in differing amounts on each div instead of on the overall design (ie: #sidebar1 is given a 70% font size and #mainContent is given an 85% font size), this will proportionately change each of the divs overall size. You may want to adjust based on your final font sizing.
+*/
+.oneColElsCtrHdr #container {
+	width: 46em;  /* this width will create a container that will fit in an 800px browser window if text is left at browser default font sizes */
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 1px solid #000000;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+}
+.oneColElsCtrHdr #header {
+	padding: 0 10px 0 20px;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+	background-color: #FFF;
+}
+.oneColElsCtrHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+	color: #000;
+}
+.oneColElsCtrHdr #mainContent {
+	padding: 0 20px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+	background: #FFFFFF;
+}
+.oneColElsCtrHdr #footer {
+	padding: 0 10px;
+	background-color: #FFF;
+}
+.oneColElsCtrHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+	text-align: center;
+}
+.oneColElsCtrHdr #container #mainContent h1 {
+	text-align: center;
+}
+.oneColElsCtrHdr #container #mainContent p {
+	color: #333;
+}
+.oneColElsCtrHdr #container #mainContent p {
+	text-align: center;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+h1 {
+	font-size: 18px;
+}
+
+.splitMenu {
+ display: inline-block;
+ vertical-align: top;
+ width: 340px;
+}
+
+.menu {
+  padding: 12px;
+  vertical-align: text-top;
+  width: auto;
+}
+.menuItem {
+  padding-bottom: 24px;
+}
+.seriesHeader {
+  font-weight: bold;
+  font-size: 18px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+}
+.seriesHeaderName {
+  text-decoration: underline;
+}
+.menuHeader {
+  font-weight: bold;
+  font-size: 16px !important;
+  padding-bottom: 12px;
+  text-align: center;
+  text-decoration: underline;
+}
+.itemName {
+  font-size: 14px;
+  text-align: center;
+}
+.itemDescription {
+  text-align: center;
+  font-size: 12px;
+}
+.disclaimer {
+  width: 380px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  font-size: 12px;
+  margin-left: 170px;
+  text-align: center;
+}
+.disclaimerItem {
+  padding: 8px;
+}
+.dietaryRestrictions {
+  font-weight: italic;
+  font-size: 11px;
+  margin-left: 170px;
+  text-align: center;
+  padding-top: 14px;
+  width: 380px;
+}
+-->
+</style></head>
+
+<body class="oneColElsCtrHdr">
+
+<div id="container">
+  <div id="header">
+    <h1><a href="index.html"><img src="images/elizabeth_logotype_web.jpg" width="698" height="341" alt="elizabeth" /></a></h1>
+  </div> <!-- end #header -->
+  <div id="mainContent">
+    <div class="splitMenu">
+      <div class="seriesHeader">
+        <div class="seriesHeaderName">LORD of THE RINGS MENU</div>
+      </div>
+
+      <div class="menu">
+        <div class="menuItem">
+          <div class="itemName">AMUSE:<br/>COLD CHICKEN and PICKLES</div>
+          <div class="itemDescription">Chicken, caramelized onion, pickles</div>
+        </div>
+
+        <div class="menuItem">
+          <div class="itemName">TEA for GANDALF</div>
+          <div class="itemDescription">Mushroom, herbs</div>
+        </div>
+
+        <div class="menuItem">
+          <div class="itemName">CANAPÉ</div>
+          <div class="itemDescription">Seed cake, carrots, scones, butter</div>
+        </div>
+
+        <div class="menuItem">
+          <div class="itemName">1<sup>st</sup> COURSE:<br/>FIRST BREAKFAST for BILBO and the DWARVES</div>
+          <div class="itemDescription">Quail egg, baby turnips, curd tart</div>
+        </div>
+
+        <div class="menuItem">
+          <div class="itemName">2<sup>nd</sup> COURSE:<br/>WEED and BERRY SALAD</div>
+          <div class="itemDescription">Strawberry, pistachio, wood sorrel</div>
+        </div>
+
+        <div class="menuItem">
+          <div class="itemName">BREAD with the ELVES and NARNIANS</div>
+          <div class="itemDescription">Honey nut boule, jam, butter, honey comb</div>
+        </div>
+
+        <div class="menuItem">
+          <div class="itemName">3<sup>rd</sup> COURSE:<br/>SNAPSHOT OF FRODO THE MUSHROOM PICKER</div>
+          <div class="itemDescription">Turnip, king oyster, parsnip</div>
+        </div>
+
+        <div class="menuItem">
+          <div class="itemName">4<sup>th</sup> COURSE:<br/>MINCED MEAT PIE</div>
+          <div class="itemDescription">Short rib, sweetbreads, pearl onion, carrot</div>
+        </div>
+
+        <div class="menuItem">
+          <div class="itemName">PRE-DESSERT:<br/>BILBO’S GARDEN and SMASHED LEMON DRINK from DOORN</div>
+          <div class="itemDescription">Yuzu, apple cider cream, snap dragons</div>
+        </div>
+
+        <div class="menuItem">
+          <div class="itemName">DESSERT:<br/>SECOND BREAKFAST of MILLE CAKE-DESSERT</div>
+          <div class="itemDescription">Crepe cake, pecan, chocolate</div>
+        </div>
+      </div>
+    </div>
+    <div class="splitMenu">
+      <div class="seriesHeader">
+         <div class="seriesHeaderName">CHRONICLES OF NARNIA MENU</div>
+      </div>
+      <div class="menu">
+        <div class="menuItem">
+          <div class="itemName">AMUSE:<br/>COLD CHICKEN and PICKLES</div>
+          <div class="itemDescription">Chicken, caramelized onion, pickles</div>
+        </div>
+
+        <div class="menuItem">
+          <div class="itemName">TEA for GANDALF</div>
+          <div class="itemDescription">Mushroom, herbs</div>
+        </div>
+
+        <div class="menuItem">
+          <div class="itemName">CANAPÉ:<br/>TURKISH DELIGHT</div>
+          <div class="itemDescription">Black walnut, apple, lamb, sun choke</div>
+        </div>
+
+        <div class="menuItem">
+          <div class="itemName">1<sup>st</sup> COURSE:<br/>FISH OVER FIRE</div>
+          <div class="itemDescription">Hibachi grilled fish, roe, cippolini</div>
+        </div>
+
+        <div class="menuItem">
+          <div class="itemName">2<sup>nd</sup> COURSE:<br/>THE CENTAUR’S FOOD</div>
+          <div class="itemDescription">Buckwheat, rye berries, wild rice, asparagus, saffron</div>
+        </div>
+
+        <div class="menuItem">
+          <div class="itemName">BREAD with the ELVES and NARNIANS</div>
+          <div class="itemDescription">Honey nut boule, jam, butter, honey comb</div>
+        </div>
+
+        <div class="menuItem">
+          <div class="itemName">3<sup>rd</sup> COURSE:<br/>A MEAL of LAMB in DOORN</div>
+          <div class="itemDescription">Lamb, cured egg, spring peas, spring onion, goat cheese</div>
+        </div>
+
+        <div class="menuItem">
+          <div class="itemName">4<sup>th</sup> COURSE:<br/>LAST MEAL in TASHBON</div>
+          <div class="itemDescription">Quail, beer, mulberries, truffle, almond, beet</div>
+        </div>
+
+        <div class="menuItem">
+          <div class="itemName">PRE-DESSERT:<br/>BILBO'S GARDEN and SMASHED LEMON DRINK from DOORN</div>
+          <div class="itemDescription">Yuzu, apple cider cream, snap dragons</div>
+        </div>
+
+        <div class="menuItem">
+          <div class="itemName">DESSERT:<br/>DRIED FRUIT</div>
+          <div class="itemDescription">Apricot, apple cider cream, honey, buttermilk</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="disclaimer">
+      <div class="disclaimerItem">Weekdays will allow the choice of the two above menus.</div>
+      <div  class="disclaimerItem">Weekend menus the two above will be combined</div>
+    </div>
+
+    <div class="dietaryRestrictions">
+      (dietary restrictions and allergies accommodated upon request)
+    </div>
+
+  <!-- end #mainContent -->
+  </div>
+
+  <div id="footer">
+    <p><a href="index.html"><img src="images/sm-elizabeth.jpg" width="166" height="106" alt="logo" /></a></p>
+  <!-- end #footer --></div>
+<!-- end #container --></div>
+</body>
+</html>
