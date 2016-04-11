@@ -10,4 +10,4 @@ RUN cd /srv; npm install --production
 COPY . /srv
 
 EXPOSE 8080
-ENTRYPOINT ["node", "/srv/app.js"]
+ENTRYPOINT ["/srv/env.sh", "node", "/srv/app.js"]

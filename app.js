@@ -19,38 +19,42 @@ app.get('/', function(req, res) {
 var port = Number(process.env.PORT || 8080);
 app.listen(port, function() {
   console.log("Listening on " + port);
+  console.log("Emailing from  " + process.env.email);
 });
 
 app.post('/comments', function(req, res) {
 	console.log(req.body.Email);
-    var smtpTransport = nodemailer.createTransport("SMTP",{
-      service: "Gmail",
-      auth: {
-          user: process.env.email, // michael
-          pass: process.env.email_pw
+  var smtpTransport = nodemailer.createTransport({
+    host: "smtp.gmail.com",
+    port: 465,
+    secure: true,
+    auth: {
+      user: process.env.email, // michael
+      pass: process.env.email_pw
+    }
+  });
+
+  var mailOptions = {
+    from: "Elizabeth website comments <" + req.body.Email + ">",
+    to: [process.env.send_to],
+    subject: "New website comment from " + req.body.Subject,
+    replyTo: req.body.Email,
+    text: "Email sent from: " + req.body.Email + '. ' + req.body.Message
+  };
+  console.log('Sending email');
+  smtpTransport.sendMail(mailOptions, function(error, response) {
+      try {
+        if (error){
+          console.log(error);
+	  console.log('email error');
+	} else{
+	  console.log('email sent');
+	}
+      } catch(e) {
+	console.log('EXCEPTION when sending email:' + e);
       }
-    });
+  });
 
-    var mailOptions = {
-        from: "Elizabeth website comments <" + req.body.Email + ">",
-    	to: [process.env.send_to, process.env.send_to_also],
-    	subject: req.body.Subject,
-		replyTo: req.body.Email,
-    	text: "Email sent from: " + req.body.Email + '. ' + req.body.Message
-	};
-  	console.log('Sending email');
-  	smtpTransport.sendMail(mailOptions, function(error, response){
-		      try {
-				  if (error){
-					  console.log('email error');
-			      } else{
-					  console.log('success email sent');
-			      }
-			  } catch(e) {
-				  console.log('EXCEPTION when sending email' + e);
-			  }
-		  });
-
-	res.statusCode = 200;
-	res.redirect('index.html');
+  res.statusCode = 200;
+  res.redirect('index.html');
 });
